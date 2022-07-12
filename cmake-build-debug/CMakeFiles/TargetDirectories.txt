@@ -1,0 +1,3 @@
+D:/file compression project/c/in_cpp/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/file compression project/c/in_cpp/cmake-build-debug/CMakeFiles/in_cpp.dir
+D:/file compression project/c/in_cpp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
