@@ -60,7 +60,7 @@ string code_generate(node *root,string str)
 
 int main() {
     ifstream input;
-    input.open("D:\\file compression project\\c\\in_cpp\\input.txt");
+    input.open("../input.txt");
     string str1;
     string temp;
     while(getline(input,temp))
@@ -123,7 +123,7 @@ int main() {
     map<string,string> codestore;
     input.close();
     ofstream output;
-    output.open("D:\\file compression project\\c\\in_cpp\\output.hof");
+    output.open("../output.hof");
     for(auto x:nonrepstring)
     {
        string code= code_generate(root,x);
@@ -152,7 +152,7 @@ int main() {
     output.close();
     map<string ,string> decode;
     ifstream input2;
-    input2.open("D:\\file compression project\\c\\in_cpp\\output.hof");
+    input2.open("../output.hof");
     string mapread;
     getline(input2,mapread);
 
@@ -162,14 +162,12 @@ int main() {
         string temp,temp1;
         ss1>>temp;
         ss1>>temp1;
-        if(temp=="\n")
-            continue;
         if(temp=="\\n")
             temp="\n";
         decode[temp1]=temp;
     }
     ofstream output2;
-    output2.open("D:\\file compression project\\c\\in_cpp\\output2.txt");
+    output2.open("../output2.txt");
     string coded_string;
     getline(input2,coded_string);
     stringstream ss2(coded_string);
