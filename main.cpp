@@ -59,6 +59,7 @@ struct compare
 };
 
 int main() {
+    // compression start 
     ifstream input;
     input.open("../input.txt");
     string str1;
@@ -150,8 +151,10 @@ int main() {
         output<<codestore[str2];
     }
     output.close();
+    
+    // decompression start
     map<string ,string> decode;
-    ifstream input2;
+    ifstream input2;        
     input2.open("../output.hof");
     string mapread;
     getline(input2,mapread);
