@@ -19,14 +19,6 @@ int search(string str,vector<node*> narray)
     }
     return -1;
 }
-struct compare
-{
-    bool operator() (node* &p1, node* & p2)
-    {
-
-        return p1->frequency > p2->frequency;
-    }
-};
 node* search_tree(node*root,string str)
 {
     if(root!=nullptr)
@@ -57,6 +49,14 @@ string code_generate(node *root,string str)
     }
     return code;
 }
+struct compare
+{
+    bool operator() (node* &p1, node* & p2)
+    {
+
+        return p1->frequency > p2->frequency;
+    }
+};
 
 int main() {
     ifstream input;
